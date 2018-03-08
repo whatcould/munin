@@ -29,6 +29,7 @@ includedir <%= node['munin']['basedir'] %>/munin-conf.d
 [<%= system['fqdn'] %>]
     address <%= system['ipaddress'] %>
     use_node_name yes
+    port <%= system['port'] || '4949' %>
 
 <% end -%>
 
